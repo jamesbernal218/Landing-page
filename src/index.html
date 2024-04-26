@@ -6,22 +6,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>¡Participa en nuestro sorteo de Chivas!</title>
   <link href="./output.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #032541;
+      color: white;
+      padding: 20px;
+    }
+
+    .carousel-container {
+      max-width: 100%;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      background-color: white;
+    }
+
+    .carousel-image {
+      flex: 0 0 auto;
+      width: 80%;
+      max-width: 400px;
+      height: auto;
+      scroll-snap-align: start;
+      border: 10px solid white;
+      border-radius: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-right: 10px;
+    }
+
+    /* Estilos para la imagen de WhatsApp */
+    .whatsapp-icon {
+      width: 24px;
+      /* Ajusta el tamaño de la imagen según lo necesites */
+      height: auto;
+      margin-right: 8px;
+      /* Ajusta el margen entre la imagen y el texto */
+    }
+
+    /* Estilos para el bloque de información del sorteo */
+    .sorteo-info {
+      background: linear-gradient(135deg, #e74c3c, #c0392b);
+      /* Cambiar colores de gradiente según prefieras */
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .sorteo-info h2,
+    .sorteo-info p,
+    .sorteo-info ul {
+      margin-bottom: 15px;
+    }
+
+    .sorteo-info a {
+      display: flex;
+      align-items: center;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+
+    .sorteo-info a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
-<body class="bg-white">
+<body>
 
   <div class="bg-red-500 text-white text-center py-16 relative">
     <div class="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-50"></div>
     <div class="relative z-10">
-      <h1 class="text-4xl md:text-6xl">¡Sorteo Playera de Chivas!</h1>
-      <p class="text-lg md:text-xl mt-4">¡Participa para ganar una playera de Chivas!</p>
+      <h1 class="text-4xl md:text-6xl ">¡Sorteo Playera de Chivas!</h1>
+      <p class="text-lg md:text-xl mt-4">¡No pierdas la oportunidad de participar en nuestra rifa y así poder ganar está
+        hermosa playera de Chivas!</p>
     </div>
   </div>
 
-
   <div class="max-w-4xl mx-auto px-4 py-8">
     <div class="text-left mt-2 my-2">
-      <p class="text-gray-500">Fotos: Galería de premios</p>
+      <p class="text-white">Fotos: Galería de premios</p>
     </div>
     <div class="carousel-container">
       <div class="carousel">
@@ -30,67 +98,41 @@
         <img src="./img/img_3.jpg" class="carousel-image" alt="Imagen del premio">
         <img src="./img/img_4.jpg" class="carousel-image" alt="Imagen del premio">
         <img src="./img/img_5.jpg" class="carousel-image" alt="Imagen del premio">
-      </div>
-    </div>
-
-
-    <div class="bg-red-500 text-white py-16 relative">
-      <div class="max-w-4xl mx-auto px-4">
-        <h2 class="text-2xl mb-4">Dinámica del Sorteo</h2>
-        <div class="text-left mb-4">
-          <p class="mb-4">¡Participa en nuestro sorteo y tendrás la oportunidad de ganar una playera versión jugador!
-          </p>
-          <ul class="list-disc list-outside">
-            <li>10 Boletos</li>
-            <li>$65 C/U</li>
-            <li>Primer lugar: Playera de Chivas</li>
-            <li>Segundo lugar: Short que se muestra en la galería de fotos</li>
-          </ul>
-        </div>
-        <div class="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-50"></div>
-        <p class="text-left">El sorteo será por Google Meet</p>
+        <img src="./img/img_6.jpg" class="carousel-image" alt="Imagen del premio">
+        <img src="./img/img_7.jpg" class="carousel-image" alt="Imagen del premio">
       </div>
     </div>
   </div>
+  <div class="max-w-4xl mx-auto">
+    <div class="sorteo-info">
+      <h2 class="text-2xl mb-4">Dinámica del Sorteo</h2>
+      <p class="mb-4">¡Participa en nuestro sorteo y tendrás la oportunidad de ganar una playera versión
+        jugador!</p>
+      <ul class="list-disc list-outside mb-4">
+        <li>10 Boletos</li>
+        <li>$65 C/U</li>
+        <li>Primer lugar: Playera de Chivas</li>
+        <li>Segundo lugar: Short que se muestra en la galería de fotos</li>
+      </ul>
+      <p>El sorteo será por Google Meet</p>
+      <br>
+      <p>Para apartar boleto:</p>
+      <a href="https://wa.me/525573954476" target="_blank">
+        <img src="./img/img_whatsapp.png" alt="Icono de WhatsApp" class="whatsapp-icon">
+        <u>55 7395 4476 (James)</u>
+      </a>
+      <a href="https://wa.me/525529545655" target="_blank">
+        <img src="./img/img_whatsapp.png" alt="Icono de WhatsApp" class="whatsapp-icon">
+        <u>55 2954 5655 (Donas)</u>
+      </a>
+      <a href="https://wa.me/525560754862" target="_blank">
+        <img src="./img/img_whatsapp.png" alt="Icono de WhatsApp" class="whatsapp-icon">
+        <u>55 6075 4862 (Bryan)</u>
+      </a>
+    </div>
+  </div>
+
+
 </body>
 
 </html>
-
-<style>
-  body {
-    background-color: #032541;
-    color: white;
-  }
-
-  .carousel-container {
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-
-  .carousel {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    background-color: white;
-    margin-bottom: 10px;
-  }
-
-  .carousel-image {
-    flex: 0 0 auto;
-    width: 80%;
-    height: 400px;
-    scroll-snap-align: start;
-    border: 10px solid white;
-    border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .carousel-image:nth-child(even) {
-    border-color: white;
-  }
-
-  .carousel-image:nth-child(odd) {
-    border-color: white;
-  }
-</style>
